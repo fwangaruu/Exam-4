@@ -1,0 +1,82 @@
+<!-- public/screen.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Native Style Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      background-color: #ECEFF1;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      position: relative;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button {
+      flex: 1;
+      padding: 10px;
+      margin: 2px;
+      text-align: center;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .blue { background-color: blue; }
+    .red { background-color: red; }
+    .green { background-color: green; }
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .bottom-buttons {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+    }
+
+    .bottom-button {
+      padding: 15px;
+      margin: 4px 0;
+      border-radius: 4px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Row Buttons -->
+  <div class="top-row">
+    <div class="button blue">BLUE BUTTON</div>
+    <div class="button red">RED BUTTON</div>
+    <div class="button green">GREEN BUTTON</div>
+  </div>
+
+  <!-- Center Text -->
+  <div class="center-text">Write the code for this screen</div>
+
+  <!-- Bottom Buttons -->
+  <div class="bottom-buttons">
+    <div class="bottom-button blue">BLUE BUTTON</div>
+    <div class="bottom-button red">RED BUTTON</div>
+    <div class="bottom-button green">GREEN BUTTON</div>
+  </div>
+
+</body>
+</html>
